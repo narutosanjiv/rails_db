@@ -12,18 +12,18 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem 'foundation-rails'
+gem 'foundation-rails', '>= 6.1.1.0'
 gem 'sass'
-gem 'jquery-rails'
-gem "font-awesome-rails"
-gem 'codemirror-rails'
+gem 'jquery-rails', '>= 4.1.0'
+gem "font-awesome-rails", ">= 4.5.0.0"
+gem 'codemirror-rails', '>= 5.7'
 
 group :development do
   gem 'quiet_assets'
 end
 
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 5.0.5'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier'
 end
@@ -36,7 +36,7 @@ gem 'faker'
 group :test do
   gem "rspec"
   gem "sqlite3"
-  gem "jquery-rails"
+  gem "jquery-rails", ">= 4.1.0"
   gem "quiet_assets"
   if RUBY_VERSION >= '2.0'
     gem "pry"
