@@ -12,7 +12,7 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem 'foundation-rails'
+gem 'foundation-rails', '>= 6.5.1.0'
 gem 'sass'
 gem 'jquery-rails'
 gem "font-awesome-rails"
@@ -23,7 +23,7 @@ group :development do
 end
 
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 6.0.0'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier'
 end
